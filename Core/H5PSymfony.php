@@ -129,7 +129,7 @@ class H5PSymfony implements \H5PFrameworkInterface
      * @param null $stream
      * @return bool|string
      */
-    public function fetchExternalData($url, $data = NULL, $blocking = TRUE, $stream = NULL)
+    public function fetchExternalData($url, $data = NULL, $blocking = TRUE, $stream = NULL, $fullData = false, $headers = [], $files = [], $method = 'POST')
     {
         $options = [];
         if (!empty($data)) {
@@ -1018,5 +1018,25 @@ class H5PSymfony implements \H5PFrameworkInterface
     public function libraryHasUpgrade($library)
     {
         // TODO: Implement libraryHasUpgrade() method.
+    }
+
+    public function replaceContentHubMetadataCache($metadata, $lang)
+    {
+        // TODO: Implement replaceContentHubMetadataCache() method.
+    }
+
+    public function getContentHubMetadataCache($lang = 'en')
+    {
+        // TODO: Implement getContentHubMetadataCache() method.
+    }
+
+    public function getContentHubMetadataChecked($lang = 'en')
+    {
+        // TODO: Implement getContentHubMetadataChecked() method.
+    }
+
+    public function setContentHubMetadataChecked($time, $lang = 'en')
+    {
+        // TODO: Implement setContentHubMetadataChecked() method.
     }
 }
